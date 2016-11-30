@@ -1,2 +1,2 @@
-# golangworkshop
+# Golang workshop
 Golang workshop

@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"errors"
-	"github.com/toefel18/cov-experiment/random"
 )
 
 type Tweet struct {
@@ -28,19 +27,20 @@ func main() {
 	} else {
 		chrisTweet.Print()
 	}
-}
 
-func commonIfStatementUsage() {
-	// if <statement> ; <condition> { }
-	if randomNr, err := computeRandomNumber(); err != nil {
-		// something bad happened, handle it NOW
+	// call divide and write as: <statement>; <condition>
+	if result, err := divide(3, 0); err != nil {
+		fmt.Println("Something went south: ", err)
 	} else {
-		fmt.Println(randomNr)
+		fmt.Println(result)
 	}
-	// randomNr is out of scope
 }
 
-func computeRandomNumber() (int, error) {
-	return random.NextInt(), errors.New("failed to generate random number")
+func divide(a, b int) (int, error) {
+	if b == 0 {
+		return 0, errors.New("cannot divide by zero")
+	} else {
+		return a / b, nil
+	}
 }
 

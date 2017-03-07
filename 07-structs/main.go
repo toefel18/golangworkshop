@@ -1,9 +1,9 @@
 package main
 
 type Tweet struct {
-	User string
+	User    string
 	Message string
-	Likes int
+	Likes   int
 }
 
 func main() {
@@ -16,6 +16,3 @@ func main() {
 	okkesTweet.Print()
 	chrisTweet.Print()
 }
-
-
-

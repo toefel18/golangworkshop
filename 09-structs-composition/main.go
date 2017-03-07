@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	// Implement a Point2D struct with an x and y coordinate
-	fmt.Println(Point2D{1,2})
+	fmt.Println(Point2D{1, 2})
 
 	// Then implement a Point3D struct with uses the Point2D and adds a z coordinate
 	// uncomment the lines below if Point3D is implemented
@@ -14,6 +14,3 @@ func main() {
 	// in case of ambiguity, the base component can be given as well
 	//fmt.Println("(", vertex.Point2D.x, vertex.Point2D.y, vertex.z, ")")
 }
-
-
-

@@ -1,17 +1,17 @@
 package main
 
 import (
-	"fmt"
 	"errors"
+	"fmt"
 )
 
 type Tweet struct {
-	User string
+	User    string
 	Message string
-	Likes int
+	Likes   int
 }
 
-func (t * Tweet) Print() {
+func (t *Tweet) Print() {
 	fmt.Printf("%v: %v  (likes: %v)\n", t.User, t.Message, t.Likes)
 }
 
@@ -34,4 +34,3 @@ func divide(a, b int) (int, error) {
 		return a / b, nil
 	}
 }
-

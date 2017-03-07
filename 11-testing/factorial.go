@@ -1,6 +1,6 @@
 package main
 
-// Factorial contains an error, look at the unit test and fix the implementation
+// Factorial contains an error, run the unit test and fix the implementation
 // To execute the test: open a terminal and cd inside the 11-testing directory, then type:
 // go test
 
@@ -16,6 +16,6 @@ func recursiveFactorial(n, current int) int {
 	if n <= 0 {
 		return current
 	} else {
-		return recursiveFactorial(n - 1, current * n)
+		return recursiveFactorial(n-1, current*n)
 	}
 }

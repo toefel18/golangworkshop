@@ -7,9 +7,9 @@ type Likeable interface {
 }
 
 type Tweet struct {
-	User string
+	User    string
 	Message string
-	Likes int
+	Likes   int
 }
 
 func main() {
@@ -19,6 +19,3 @@ func main() {
 	likableTweet.Like()
 	fmt.Println("Okkes tweet is now liked", okkesTweet.Likes, "times")
 }
-
-
-

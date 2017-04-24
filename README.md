@@ -5,7 +5,8 @@
    ```bash
    go get github.com/toefel18/golangworkshop
    ```
-1. Use [the golang cheatsheet](https://github.com/a8m/go-lang-cheat-sheet/blob/master/golang_refcard.pdf) as your goude!
+1. Use [the golang cheatsheet](https://github.com/a8m/go-lang-cheat-sheet/blob/master/golang_refcard.pdf) 
+as your guide!
 
 1. Cd to each directory, read the comments how to implement the exercise and run:  
 
